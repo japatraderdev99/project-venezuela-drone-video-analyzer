@@ -1,3 +1,0 @@
-Coloque aqui os vídeos baixados do Google Drive (pasta "Sequencias com Substituicao de takes").
-O nome do arquivo precisa conter a versão: V042, V043 ou V044 (como já vem do Drive). Não renomeie.
-Os vídeos não vão para o git (estão no .gitignore).

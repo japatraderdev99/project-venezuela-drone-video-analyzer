@@ -25,7 +25,7 @@ Siga exatamente estes passos, nesta ordem, e confirme cada um antes do próximo.
 3. **Baixe os vídeos** da pasta do Google Drive pelo navegador: <https://drive.google.com/drive/folders/18t5dKi0OaPFsoAKlmkmKviqLNRRfBTQw>
    - Baixe **arquivo por arquivo** (clique com o botão direito no arquivo › Fazer download). Baixar a pasta inteira faz o Drive gerar vários ZIPs.
    - O Drive avisa que não consegue verificar vírus em arquivos grandes. Clique em **"Fazer o download assim mesmo"**.
-   - Mova os arquivos para a pasta `videos/` do repositório **sem renomear**.
+   - Mova os arquivos para a pasta **`VIDEOS/`** do repositório, que é a pasta aberta no VS Code, **sem renomear**.
 4. **Confira os vídeos:**
    ```bash
    python3 servidor.py --checar
@@ -42,10 +42,13 @@ Siga exatamente estes passos, nesta ordem, e confirme cada um antes do próximo.
 
 | Arquivo no Drive | O que é | Tamanho |
 |---|---|---|
-| `VENEZUELA_V044_MASTERPIECE_UHD30_H264_55Mbps_YOUTUBE.mp4` | **Versão final, 4K. É a que tem os comentários** | 61,4 GB (61.375.955.099 bytes) |
-| `VENEZUELA_V043_CURADORIA_CLAUDE_REVISAO_HD1080.mp4` | Versão anterior, HD 1080, para comparar | 18,1 GB (18.091.095.000 bytes) |
+| `VENEZUELA_V044_MASTERPIECE_UHD30_H264_55Mbps_YOUTUBE.mp4` | **v044: versão final, 4K, com as 94 trocas de takes. É a que tem os comentários** | 61,4 GB (61.375.955.099 bytes) |
+| `VENEZUELA_V043_CURADORIA_CLAUDE_REVISAO_HD1080.mp4` | v043: curadoria, HD 1080 | 18,1 GB (18.091.095.000 bytes) |
+| `VENEZUELA_V042_LETTERINGS_S72_TRILHA_CODEX_R06_UHD30.mp4` | v042: versão sem as substituições de takes, 4K | 111,2 GB (111.238.627.569 bytes) |
 
-Para revisar basta o **V044**; o V043 é opcional. A aba v042 aparece na interface, mas o vídeo dela não está no Drive. Sem o vídeo, a aba de uma versão continua funcionando, só não toca.
+Para revisar basta o **v044**. O v043 e o v042 servem para comparar: na interface, os botões v042 / v043 / v044 trocam a versão no mesmo ponto do filme. Baixe só o que estiver no Drive e couber no disco. Sem o vídeo, a aba de uma versão continua funcionando, só não toca.
+
+**Versão futura.** Vai entrar também uma versão só com os takes dos vídeos novos. Quando ela estiver pronta, chega com um `git pull` (os dados da montagem) e um vídeo novo no Drive, que vai para a mesma pasta `VIDEOS/`.
 
 Navegador recomendado: Google Chrome. Safari e Edge também tocam esses vídeos.
 
@@ -91,14 +94,14 @@ Para mandar comentários novos para o Patrick:
 ## Segurança e privacidade
 
 - Não há chaves, senhas, tokens nem chamadas a serviços externos. O código está todo em `servidor.py` (biblioteca padrão do Python) e em `app/index.html`.
-- O servidor só aceita conexões do próprio computador (`127.0.0.1`) e só serve a pasta `app/` e os vídeos de `videos/`.
+- O servidor só aceita conexões do próprio computador (`127.0.0.1`) e só serve a pasta `app/` e os vídeos de `VIDEOS/`.
 - Vídeos e comentários ficam só na sua máquina e estão no `.gitignore`. Os únicos comentários no repositório são os iniciais, em `app/seed/`.
 
 ## Problemas comuns
 
 | Sintoma | O que fazer |
 |---|---|
-| "Vídeo v044 não encontrado" embaixo do vídeo | O arquivo não está em `videos/` ou foi renomeado. Rode `python3 servidor.py --checar`. |
+| "Vídeo v044 não encontrado" embaixo do vídeo | O arquivo não está em `VIDEOS/` ou foi renomeado. Rode `python3 servidor.py --checar`. |
 | "Address already in use" / porta 8765 ocupada | A revisão já está aberta em outra janela. Use essa, ou rode `python3 servidor.py --porta 8770`. |
 | Mac bloqueia o `ABRIR-REVISAO.command` | Clique com o botão direito › Abrir, ou rode `python3 servidor.py` no Terminal. |
 | Comentário mostra "⚠ não gravado" | A janela do Terminal foi fechada. Abra de novo; os pendentes são gravados sozinhos. |
@@ -114,7 +117,7 @@ ABRIR-REVISAO.bat        atalho para Windows
 app/index.html           a interface (dados do filme embutidos)
 app/thumbs/              miniaturas dos takes
 app/seed/                comentários iniciais (do Guilherme), carregados uma vez
-videos/                  coloque aqui os vídeos do Drive (fora do git)
+VIDEOS/                  coloque aqui os vídeos do Drive (fora do git)
 comentarios/             criado ao usar: COMENTARIOS.json, COMENTARIOS.txt, historico.jsonl (fora do git)
 ```
 

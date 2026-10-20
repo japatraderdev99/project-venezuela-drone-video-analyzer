@@ -1,0 +1,4 @@
+Coloque nesta pasta (VIDEOS) os vídeos baixados do Google Drive (pasta "Sequencias com Substituicao de takes").
+Não renomeie: o nome precisa conter a versão (V042, V043 ou V044), como já vem do Drive.
+V042 = versão sem as substituições de takes · V043 = curadoria · V044 = versão final.
+Os vídeos não vão para o git (estão no .gitignore).

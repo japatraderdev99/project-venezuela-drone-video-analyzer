@@ -1,6 +1,7 @@
 # vídeos e comentários ficam só na máquina de quem revisa
-videos/*
-!videos/COLOQUE-OS-VIDEOS-AQUI.txt
+VIDEOS/*
+!VIDEOS/COLOQUE-OS-VIDEOS-AQUI.txt
+videos/
 comentarios/
 *.mp4
 *.mov

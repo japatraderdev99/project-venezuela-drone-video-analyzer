@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Venezuela · revisão local dos vídeos (só Python 3.8+, sem dependências, só nesta máquina: 127.0.0.1:8765).
 
-Serve a interface (app/), os vídeos da pasta videos/ (com Range, para pular no tempo) e grava os comentários em comentarios/:
+Serve a interface (app/), os vídeos da pasta VIDEOS/ (com Range, para pular no tempo) e grava os comentários em comentarios/:
   COMENTARIOS.json   estado atual (a interface lê e grava aqui)
   COMENTARIOS.txt    o mesmo em texto, por versão e tempo
   historico.jsonl    toda operação (criar, editar, resolver, apagar), nunca é reescrito
@@ -15,7 +15,9 @@ import json, os, re, socket, subprocess, sys, threading, time, webbrowser
 from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
-APP, VIDS, CD = (os.path.join(ROOT, n) for n in ('app', 'videos', 'comentarios'))
+APP, CD = (os.path.join(ROOT, n) for n in ('app', 'comentarios'))
+# pasta dos vídeos: VIDEOS/ (a antiga videos/ também vale)
+VIDS = next((os.path.join(ROOT, n) for n in ('VIDEOS', 'videos') if os.path.isdir(os.path.join(ROOT, n))), os.path.join(ROOT, 'VIDEOS'))
 DB, TXT, LOG = (os.path.join(CD, n) for n in ('COMENTARIOS.json', 'COMENTARIOS.txt', 'historico.jsonl'))
 PORT = int(sys.argv[sys.argv.index('--porta') + 1]) if '--porta' in sys.argv else 8765
 URL = f'http://127.0.0.1:{PORT}/'
@@ -27,7 +29,7 @@ lock = threading.Lock()
 
 
 def find_videos():
-    """Para cada versão, o arquivo de vídeo em videos/ que tem 'v042', 'v043' ou 'v044' no nome (o maior, se houver mais de um)."""
+    """Para cada versão, o arquivo de vídeo em VIDEOS/ que tem 'v042', 'v043' ou 'v044' no nome (o maior, se houver mais de um)."""
     files = [f for f in os.listdir(VIDS) if f.lower().endswith(EXTS) and not f.startswith('.')] if os.path.isdir(VIDS) else []
     out = {}
     for v in VERSIONS:
@@ -153,7 +155,7 @@ class Handler(SimpleHTTPRequestHandler):
     def send_video(self, ver):
         name = find_videos().get(ver)
         if not name:
-            return self.send_error(404, 'video nao encontrado em videos/')
+            return self.send_error(404, 'video nao encontrado em VIDEOS/')
         path = os.path.join(VIDS, name)
         size = os.path.getsize(path)
         start, end = 0, size - 1
@@ -197,7 +199,7 @@ def open_browser():
 
 def report():
     vids = find_videos()
-    print('Vídeos em videos/:')
+    print('Vídeos em VIDEOS/:')
     for v, f in vids.items():
         print(f'  {v}: ' + (f'{f}  ({os.path.getsize(os.path.join(VIDS, f)) / 1e9:.1f} GB)' if f else 'não encontrado'))
     return vids
