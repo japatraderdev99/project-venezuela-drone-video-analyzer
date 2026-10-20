@@ -1,0 +1,9 @@
+# vídeos e comentários ficam só na máquina de quem revisa
+videos/*
+!videos/COLOQUE-OS-VIDEOS-AQUI.txt
+comentarios/
+*.mp4
+*.mov
+*.m4v
+.DS_Store
+__pycache__/
