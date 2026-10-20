@@ -1,0 +1,386 @@
+{
+ "app": "venezuela-drone-video-analyzer",
+ "formato": 1,
+ "exportado": "2026-10-20T08:08:09",
+ "quem": "Guilherme",
+ "itens": [
+  {
+   "id": "mvgi2avt5o7y",
+   "ver": "v044",
+   "t": 96.987,
+   "tc": "0:01:37.00",
+   "text": "take impressionante, mas talvez muito longo, repensar sobre colocar os mais DESLUMBRANTES NO INICIO para impressionar de cara, com um equilibrio entre duracao, diversificacao e o melhor de cada take, com o melhor corte de cada take, sempre smooth como deve ser.",
+   "who": "Guilherme",
+   "created": "2026-10-20T06:47:41",
+   "done": false,
+   "place": "Canaima · Bolívar",
+   "slot": 6,
+   "take": [
+    71.83333333333333,
+    119.36666666666666
+   ],
+   "concordo": [],
+   "respostas": []
+  },
+  {
+   "id": "mvgi480k4two",
+   "ver": "v044",
+   "t": 138.134,
+   "tc": "0:02:18.04",
+   "text": "pode vir logo depois, mas talvez com uma quebra de um take que se conecte mas que mude de lugar visando diversificacao e deslumbre.",
+   "who": "Guilherme",
+   "created": "2026-10-20T06:49:11",
+   "done": false,
+   "place": "Canaima · Bolívar",
+   "slot": 7,
+   "take": [
+    119.36666666666666,
+    152.33333333333334
+   ],
+   "concordo": [],
+   "respostas": []
+  },
+  {
+   "id": "mvgi5zopzeem",
+   "ver": "v044",
+   "t": 158.707,
+   "tc": "0:02:38.21",
+   "text": "tremidinha no começo do video, talvez iniciar mais tarde o take",
+   "who": "Guilherme",
+   "created": "2026-10-20T06:50:33",
+   "done": false,
+   "place": "Laguna de Mucubají · Mérida",
+   "slot": 8,
+   "take": [
+    152.33333333333334,
+    181.16666666666666
+   ],
+   "concordo": [],
+   "respostas": []
+  },
+  {
+   "id": "mvgibulk9bs3",
+   "ver": "v044",
+   "t": 278.912,
+   "tc": "0:04:38.27",
+   "text": "este local aparece novamente em 12:50 e em 29:00, talvez escolher o melhor take entre eles e dar mais diversidade frente a outras opcoes mais DESLUMBRANTES NO COMEÇO DO VIDEO",
+   "who": "Guilherme",
+   "created": "2026-10-20T06:55:07",
+   "done": false,
+   "place": "Nuestra Señora de Coromoto · Portuguesa",
+   "slot": 14,
+   "take": [
+    269.76666666666665,
+    286.3666666666667
+   ],
+   "concordo": [],
+   "respostas": []
+  },
+  {
+   "id": "mvgih3x8d6k5",
+   "ver": "v044",
+   "t": 442.616,
+   "tc": "0:07:22.18",
+   "text": "DRONE TREME EM ALGUMAS PARTES DO TAKE, CORRIGIR COM MELHOR INTERVALO DO TAKE A SER USADO, TAKE DEVE SER TOTALMENTE SMOOTH EM MOVIMENTO, SEM TREPIDAÇOES OU MOVIMENTOS BRUSCOS",
+   "who": "Guilherme",
+   "created": "2026-10-20T06:59:12",
+   "done": false,
+   "place": "Playa Medina · Sucre",
+   "slot": 21,
+   "take": [
+    437.26666666666665,
+    466.8333333333333
+   ],
+   "concordo": [],
+   "respostas": []
+  },
+  {
+   "id": "mvgik6jkpd34",
+   "ver": "v044",
+   "t": 506.098,
+   "tc": "0:08:26.03",
+   "text": "TAKE MUITO LONGO, SERIA UMA TRIPLICE FRONTEIRA? TALVEZ PREVALECER ALGUM TAKE MAIS IMPRESSIONANTE E DESLUMBRANTE E QUE FAVORECA A DIVERSIDADE TAMBEM.",
+   "who": "Guilherme",
+   "created": "2026-10-20T07:01:36",
+   "done": false,
+   "place": "El Ávila · Distrito Capital · Miranda · La Guaira",
+   "slot": 22,
+   "take": [
+    466.8333333333333,
+    535.8
+   ],
+   "concordo": [],
+   "respostas": []
+  },
+  {
+   "id": "mvgipqrfolhx",
+   "ver": "v044",
+   "t": 696.481,
+   "tc": "0:11:36.14",
+   "text": "take impressionante, com potencial para ir mais ao inicio do video?",
+   "who": "Guilherme",
+   "created": "2026-10-20T07:05:55",
+   "done": false,
+   "place": "Isla El Faro · Anzoátegui",
+   "slot": 28,
+   "take": [
+    677.8,
+    712.9333333333333
+   ],
+   "concordo": [],
+   "respostas": []
+  },
+  {
+   "id": "mvgirlbakqud",
+   "ver": "v044",
+   "t": 763.548,
+   "tc": "0:12:43.16",
+   "text": "take ABSURDO, COM CERTEZA COLOCAR MAIS A FRENTE NO VIDEO",
+   "who": "Guilherme",
+   "created": "2026-10-20T07:07:21",
+   "done": false,
+   "place": "Isla Piscina · Sucre",
+   "slot": 31,
+   "take": [
+    754.5666666666667,
+    770.9333333333333
+   ],
+   "concordo": [],
+   "respostas": []
+  },
+  {
+   "id": "mvgisahj352i",
+   "ver": "v044",
+   "t": 775.136,
+   "tc": "0:12:55.04",
+   "text": "REPETITIVO COMO DISSE NO COMENTARIO ANTERIOR DESSE TAKE",
+   "who": "Guilherme",
+   "created": "2026-10-20T07:07:54",
+   "done": false,
+   "place": "Nuestra Señora de Coromoto · Portuguesa",
+   "slot": 32,
+   "take": [
+    770.9333333333333,
+    796.6666666666666
+   ],
+   "concordo": [],
+   "respostas": []
+  },
+  {
+   "id": "mvgitfv7sdtz",
+   "ver": "v044",
+   "t": 808.864,
+   "tc": "0:13:28.26",
+   "text": "MUITO BOM TAMBEM, TALVEZ IR ANTES",
+   "who": "Guilherme",
+   "created": "2026-10-20T07:08:48",
+   "done": false,
+   "place": "Puerto Cabello · Carabobo",
+   "slot": 33,
+   "take": [
+    796.6666666666666,
+    816
+   ],
+   "concordo": [],
+   "respostas": []
+  },
+  {
+   "id": "mvgj48dxg2qh",
+   "ver": "v044",
+   "t": 959,
+   "tc": "0:15:59.00",
+   "text": "corte do take nao esta favorecendo a legibilidade do lettering no canto inferior esquerdo, verificar se cortes mais a frente podem ser utilizados, TAKE MUITO BOM POREM MUITO CURTO, DE SE PENSAR EM IR MAIS A FRENTE TAMBEM.",
+   "who": "Guilherme",
+   "created": "2026-10-20T07:17:11",
+   "done": false,
+   "place": "Mochima · Anzoátegui · Sucre",
+   "slot": 41,
+   "take": [
+    955,
+    964.5333333333333
+   ],
+   "concordo": [],
+   "respostas": []
+  },
+  {
+   "id": "mvgj5tjjbu7z",
+   "ver": "v044",
+   "t": 979.862,
+   "tc": "0:16:19.26",
+   "text": "TALVEZ CAIBA UM TAKE MAIS IMPRESSIONANTE, ESTE ESTA MUITO PADRAO DE PAISAGEM E O LOCAL MUITO REPETITIVO, ALEM DE O TAKE ESTAR MUITO LONGO.",
+   "who": "Guilherme",
+   "created": "2026-10-20T07:18:25",
+   "done": false,
+   "place": "Hato El Cedral · Apure",
+   "slot": 42,
+   "take": [
+    964.5333333333333,
+    1004.0666666666667
+   ],
+   "concordo": [],
+   "respostas": []
+  },
+  {
+   "id": "mvgj7t6r3e3d",
+   "ver": "v044",
+   "t": 1060.396,
+   "tc": "0:17:40.12",
+   "text": "LUGAR ICONICO, TALVEZ COLOCAR ANTES?",
+   "who": "Guilherme",
+   "created": "2026-10-20T07:19:58",
+   "done": false,
+   "place": "Puente de Angostura · Bolívar",
+   "slot": 44,
+   "take": [
+    1045.3666666666666,
+    1080.6333333333334
+   ],
+   "concordo": [],
+   "respostas": []
+  },
+  {
+   "id": "mvgj9kqpd54q",
+   "ver": "v044",
+   "t": 1119.915,
+   "tc": "0:18:39.27",
+   "text": "ESSE TAKE TEM QUE IR PARA OS PRIMEIROS MINUTOS!! STUPENDO!",
+   "who": "Guilherme",
+   "created": "2026-10-20T07:21:20",
+   "done": false,
+   "place": "Sanare · Lara",
+   "slot": 47,
+   "take": [
+    1113.9,
+    1126.5
+   ],
+   "concordo": [],
+   "respostas": []
+  },
+  {
+   "id": "mvgjbqjf6boj",
+   "ver": "v044",
+   "t": 1147.097,
+   "tc": "0:19:07.03",
+   "text": "LOCAL PARECIDO COM PIU PUY, E DEPOIS EM 27:11 COM PENINSULA DE PARIA SUCRE, TALVEZ UMA DIVERSIFICACAO EM ALGUM DOS TAKES.",
+   "who": "Guilherme",
+   "created": "2026-10-20T07:23:01",
+   "done": false,
+   "place": "Playa Medina · Sucre",
+   "slot": 49,
+   "take": [
+    1132.9,
+    1156.9666666666667
+   ],
+   "concordo": [],
+   "respostas": []
+  },
+  {
+   "id": "mvgjwy17wtgv",
+   "ver": "v044",
+   "t": 1184.129,
+   "tc": "0:19:44.04",
+   "text": "LOCAL PARECIDO COM PLAY MEDINA, E DEPOIS EM 27:11 COM PENINSULA DE PARIA SUCRE, TALVEZ UMA DIVERSIFICACAO EM ALGUM DOS TAKES.",
+   "who": "Guilherme",
+   "created": "2026-10-20T07:39:31",
+   "done": false,
+   "place": "Piu Puy · Sucre",
+   "slot": 51,
+   "take": [
+    1167.6666666666667,
+    1210.5
+   ],
+   "concordo": [],
+   "respostas": []
+  },
+  {
+   "id": "mvgjz6gt6ags",
+   "ver": "v044",
+   "t": 1272.899,
+   "tc": "0:21:12.27",
+   "text": "EXCELENTE TAKE PARA TALVEZ IR MAIS PARA O INICIO?",
+   "who": "Guilherme",
+   "created": "2026-10-20T07:41:15",
+   "done": false,
+   "place": "La Ciénaga · Aragua",
+   "slot": 53,
+   "take": [
+    1258.2333333333333,
+    1283.6
+   ],
+   "concordo": [],
+   "respostas": []
+  },
+  {
+   "id": "mvgkf1zbqwd3",
+   "ver": "v044",
+   "t": 1563.556,
+   "tc": "0:26:03.17",
+   "text": "foi o primeiro take deste lugar a aparecer? senao me lembro de um take do patrick nadando entre as aguas se misturando que seria muito mais IMPRESSIONANTE, se ja apareceu antes, perfeito, senao colocar este take dele nadando talvez mas no comeco e permanecer esse como esta.",
+   "who": "Guilherme",
+   "created": "2026-10-20T07:53:36",
+   "done": false,
+   "place": "Confluencia del Orinoco y el Caroní · Bolívar",
+   "slot": 66,
+   "take": [
+    1560.9,
+    1568.3
+   ],
+   "concordo": [],
+   "respostas": []
+  },
+  {
+   "id": "mvgkiyildxi8",
+   "ver": "v044",
+   "t": 1701.395,
+   "tc": "0:28:21.12",
+   "text": "este take de la fronte ya no ha aparecido antes en principio de video com una duracion larga y que ya he comentado? checar!",
+   "who": "Guilherme",
+   "created": "2026-10-20T07:56:38",
+   "done": false,
+   "place": "El Ávila · Distrito Capital · Miranda · La Guaira",
+   "slot": 74,
+   "take": [
+    1665.1666666666667,
+    1726.4333333333334
+   ],
+   "concordo": [],
+   "respostas": []
+  },
+  {
+   "id": "mvgklp8tqh1q",
+   "ver": "v044",
+   "t": 1791.035,
+   "tc": "0:29:51.01",
+   "text": "IMPRESSIONANTE EL COLOR DE AGUA, TALVEZ PONER EN EL PRINCIPIO DE VIDEO",
+   "who": "Guilherme",
+   "created": "2026-10-20T07:58:46",
+   "done": false,
+   "place": "Playa Mayorquina · Falcón",
+   "slot": 78,
+   "take": [
+    1784.9333333333334,
+    1800.1666666666667
+   ],
+   "concordo": [],
+   "respostas": []
+  },
+  {
+   "id": "mvgkngwvijap",
+   "ver": "v044",
+   "t": 1807.2,
+   "tc": "0:30:07.06",
+   "text": "lo mismo, creo que esta imagem puede ser antes de las otras de mesmo sitio, por talvez ser mas impressionante? a ver",
+   "who": "Guilherme",
+   "created": "2026-10-20T08:00:08",
+   "done": false,
+   "place": "Gran Roque · Dependencias Federales",
+   "slot": 79,
+   "take": [
+    1800.1666666666667,
+    1813.8666666666666
+   ],
+   "concordo": [],
+   "respostas": []
+  }
+ ]
+}

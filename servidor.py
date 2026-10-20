@@ -5,9 +5,11 @@ Serve a interface (app/), os vídeos da pasta videos/ (com Range, para pular no 
   COMENTARIOS.json   estado atual (a interface lê e grava aqui)
   COMENTARIOS.txt    o mesmo em texto, por versão e tempo
   historico.jsonl    toda operação (criar, editar, resolver, apagar), nunca é reescrito
+Na primeira vez (e a cada git pull com comentários novos em app/seed/), os comentários de app/seed/*.json entram uma única vez.
 
 Uso:  python3 servidor.py              abre a revisão no navegador
       python3 servidor.py --checar     só lista os vídeos encontrados e sai
+      python3 servidor.py --porta 8770 usa outra porta (padrão 8765)
 """
 import json, os, re, socket, subprocess, sys, threading, time, webbrowser
 from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
@@ -15,8 +17,9 @@ from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
 ROOT = os.path.dirname(os.path.abspath(__file__))
 APP, VIDS, CD = (os.path.join(ROOT, n) for n in ('app', 'videos', 'comentarios'))
 DB, TXT, LOG = (os.path.join(CD, n) for n in ('COMENTARIOS.json', 'COMENTARIOS.txt', 'historico.jsonl'))
-PORT = 8765
+PORT = int(sys.argv[sys.argv.index('--porta') + 1]) if '--porta' in sys.argv else 8765
 URL = f'http://127.0.0.1:{PORT}/'
+SEED = os.path.join(APP, 'seed')
 VERSIONS = ('v042', 'v043', 'v044')
 EXTS = ('.mp4', '.m4v', '.mov')
 MAX_BODY = 2_000_000
@@ -69,6 +72,34 @@ def valid(it):
     return (isinstance(it, dict) and isinstance(it.get('id'), str) and 0 < len(it['id']) <= 64
             and it.get('ver') in VERSIONS and isinstance(it.get('t'), (int, float))
             and isinstance(it.get('text'), str) and len(it['text']) <= 10_000)
+
+
+def seed():
+    """Comentários de app/seed/ entram uma vez só (os ids já semeados ficam em comentarios/semeados.json),
+    então apagar um deles aqui não faz ele voltar no próximo início."""
+    if not os.path.isdir(SEED):
+        return 0
+    done_p = os.path.join(CD, 'semeados.json')
+    try:
+        done = set(json.load(open(done_p, encoding='utf-8')))
+    except (FileNotFoundError, ValueError):
+        done = set()
+    items = load()
+    have = {c['id'] for c in items}
+    n = 0
+    for f in sorted(os.listdir(SEED)):
+        if not f.endswith('.json'):
+            continue
+        j = json.load(open(os.path.join(SEED, f), encoding='utf-8'))
+        for c in (j.get('itens') if isinstance(j, dict) else j) or []:
+            if valid(c) and c['id'] not in done:
+                done.add(c['id'])
+                if c['id'] not in have:
+                    items.append(c); n += 1
+    if n:
+        save(items)
+    json.dump(sorted(done), open(done_p, 'w', encoding='utf-8'))
+    return n
 
 
 class Handler(SimpleHTTPRequestHandler):
@@ -181,6 +212,9 @@ if __name__ == '__main__':
     os.makedirs(CD, exist_ok=True)
     if not os.path.exists(TXT):
         save(load())
+    n = seed()
+    if n:
+        print(f'{n} comentários iniciais carregados de app/seed/.')
     s = socket.socket()
     if s.connect_ex(('127.0.0.1', PORT)) == 0:
         print('A revisão já estava aberta.'); open_browser(); sys.exit(0)
